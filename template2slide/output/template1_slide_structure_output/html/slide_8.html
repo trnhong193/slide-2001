@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #000000; }
+body {
+  width: 720pt;
+  height: 405pt;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  min-height: 0;
+}
+.title {
+  color: #00AEEF;
+  font-size: 26pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20pt 40pt 12pt 40pt;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  flex-shrink: 0;
+}
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  margin: 0 40pt 72pt 40pt;
+  gap: 25pt;
+  min-height: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.media-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+}
+img, video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+video {
+  background: #000000;
+}
+.video-link {
+  color: #00AEEF;
+  font-size: 10pt;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 10pt;
+  padding: 5pt;
+  border: 1px dashed #00AEEF;
+}
+.section {
+  margin-bottom: 8pt;
+}
+.section-label {
+  color: #00AEEF;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 2pt;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.section-text {
+  color: #FFFFFF;
+  font-size: 11pt;
+  line-height: 1.25;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<h1 class="title">Human Down Detection</h1>
+<div class="content-wrapper">
+  <div class="text-content">
+    <div class="section">
+      <p class="section-label">Purpose:</p>
+      <p class="section-text">Detects worker falls or immobility. Detects workers who have fallen or are lying down, enabling rapid response to accidents.</p>
+    </div>
+    <div class="section">
+      <p class="section-label">Alert Logic:</p>
+      <p class="section-text">Alert when a person is detected in a lying posture for longer than a short threshold duration.</p>
+    </div>
+    <div class="section">
+      <p class="section-label">Preconditions:</p>
+      <p class="section-text">Camera distance roughly 5–10 m, with full body visible and minimal occlusions.</p>
+    </div>
+    
+  </div>
+  <div class="media-content">
+    <div class="video-link"><p>Video URL (manual insert):</p><p>https://drive.google.com/file/d/1td7wDI3hPH50adRF2SzcfxalXl_h7vw_/view?usp=sharing</p></div>
+  </div>
+</div>
+</body>
+</html>
